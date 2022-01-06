@@ -30,9 +30,9 @@ def definetime():
     return str(datetime.datetime.combine(minutes, datetime.time.min) - dt)
 
 def imageswitch():
-    awesomepictures = ["404-wall.jpg", "done.jpg", "onedoesnotsimply.jpg", "painful.jpg"]
+    awesomepictures = ["https://raw.githubusercontent.com/CLStrike/cicd-buzz/master/404-wall.jpg", "https://raw.githubusercontent.com/CLStrike/cicd-buzz/master/done.jpg", "https://raw.githubusercontent.com/CLStrike/cicd-buzz/master/onedoesnotsimply.jpg", "https://raw.githubusercontent.com/CLStrike/cicd-buzz/master/painful.jpg", "https://raw.githubusercontent.com/CLStrike/cicd-buzz/master/onedoesnotsimply.jpg", "https://raw.githubusercontent.com/CLStrike/cicd-buzz/master/girl.jpg"]
 
-    b = random.randint(0, 3)
+    b = random.randint(0, 4)
     return str(awesomepictures[b])
 
 if __name__ == "__main__":
