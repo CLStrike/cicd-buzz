@@ -8,10 +8,19 @@ app = Flask(__name__)
 
 @app.route("/")
 def generate_buzz():
-    page = '<html><body><h1>Countdown</h1>'
+    page = '<html>'
+    page += """<style>
+body {
+  background-image: url(https://cdn.kapwing.com/final_6185b58933771d00365cedcd_760615.gif);
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 1500;
+}
+</style>"""
+    page += '<body><h1>Countdown</h1>'
     page += '<span title="A lot to process.. I know..">' + definetime() + " left until 2023" + "</span>"
     page += '</h1></br>'
-    page += '<img src="' + imageswitch() + '"></img>'
+    page += '<img src="' + imageswitch() + '"></img style="padding 10px">'
     page += '</body></html>'
     return page
 
