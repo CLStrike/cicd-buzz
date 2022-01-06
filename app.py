@@ -12,16 +12,16 @@ def generate_buzz():
     page += """<style>
 body {
   background-image: url(https://cdn.kapwing.com/final_6185b58933771d00365cedcd_760615.gif);
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: right;
-  height: 1500;
+  height: 1750;
 }
 </style><head><title>REFRESH PLEASE!</title></head>"""
     page += '<body><h1>Countdown</h1>'
     page += '<span title="A lot to process.. I know..">' + definetime() + " left until 2023" + "</span>"
     page += '</h1></br>'
-    page += '<img src="' + imageswitch() + '"></img style="padding 10px">'
-    page += "Greetings from Dennis Oosterom && Coen Luijten</br>"
+    page += '<img src="' + imageswitch() + '"></img style="padding 40px">'
+    page += "</br></br>Greetings from Dennis Oosterom && Coen Luijten</br>"
     page += '</body></html>'
     return page
 
