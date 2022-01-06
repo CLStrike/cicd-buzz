@@ -16,11 +16,12 @@ body {
   background-position: right;
   height: 1500;
 }
-</style>"""
+</style><head><title>REFRESH PLEASE!</title></head>"""
     page += '<body><h1>Countdown</h1>'
     page += '<span title="A lot to process.. I know..">' + definetime() + " left until 2023" + "</span>"
     page += '</h1></br>'
     page += '<img src="' + imageswitch() + '"></img style="padding 10px">'
+    page += "Greetings from Dennis Oosterom && Coen Luijten</br>"
     page += '</body></html>'
     return page
 
